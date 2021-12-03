@@ -1,0 +1,63 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Audio;
+using UnityEngine.UI;
+
+public class SettingsMenu : MonoBehaviour
+{
+
+    public AudioMixer audioMixer;
+    Resolution[] resolutions;
+    public Dropdown resolutionDropdown;
+    public Text text;
+
+
+    void Start()
+    {
+        resolutions = Screen.resolutions;
+
+        resolutionDropdown.ClearOptions();
+        List<string> options = new List<string>();
+
+        int currentResolutionIndex = 0;
+        for(int i = 0; i < resolutions.Length; i++)
+        {
+            string option = resolutions[i].width + " x " + resolutions[i].height + " @" + resolutions[i].refreshRate + " fps";
+            options.Add(option);
+
+            if (resolutions[i].width == Screen.currentResolution.width && 
+                resolutions[i].height == Screen.currentResolution.height &&
+                resolutions[i].refreshRate == Screen.currentResolution.refreshRate)
+            {
+                currentResolutionIndex = i;
+            }
+        }
+        Debug.Log(Screen.currentResolution.width + " x " + Screen.currentResolution.height+" @" + Screen.currentResolution.refreshRate);
+        resolutionDropdown.AddOptions(options);
+        resolutionDropdown.value = currentResolutionIndex;
+        resolutionDropdown.RefreshShownValue();
+        string tex = Screen.currentResolution.width + " x " + Screen.currentResolution.height + " @" + Screen.currentResolution.refreshRate;
+        text.text = tex;
+    }
+
+    public void SetVolume (float volume)
+    {
+        audioMixer.SetFloat("MainVolume", Mathf.Log10(volume) * 20); //min. 0.0001 - max. 1
+        //audioMixer.SetFloat("MainVolume",volume); //min. -80 - max. 0
+    }
+
+    public void SetFullscreen (bool isFullscreen)
+    {
+        Screen.fullScreen = isFullscreen;
+    }
+
+    public void SetResolution (int resolutionIndex)
+    {
+        Screen.SetResolution(resolutions[resolutionIndex].width, resolutions[resolutionIndex].height, Screen.fullScreen, resolutions[resolutionIndex].refreshRate);
+
+        string tex = Screen.currentResolution.width + " x " + Screen.currentResolution.height + " @" + Screen.currentResolution.refreshRate;
+        text.text = tex;
+    }
+
+}
