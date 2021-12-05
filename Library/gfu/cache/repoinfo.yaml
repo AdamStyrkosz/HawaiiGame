@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2021-12-04T15:04:15.834+01:00
-  initializedAtString: 2021-12-04T15:04:15.834+01:00
+  lastUpdatedAtString: 2021-12-05T15:02:24.090+01:00
+  initializedAtString: 2021-12-05T14:02:25.406+01:00
   currentGitRemote:
     name: origin
     url: https://github.com/AdamStyrkosz/HawaiiGame.git

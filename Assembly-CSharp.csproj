@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{191C9F71-6412-8136-31F9-98CB246CBE7F}</ProjectGuid>
+    <ProjectGuid>{497F8869-00B7-9824-7126-1DA9C1A1074C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\Score_and_Power-Ups\CollectScore.cs" />
     <Compile Include="Assets\Scripts\Score_and_Power-Ups\PowerUpController.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\GameOverMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Downloaded Assets\JsonDotNet\link.xml" />
