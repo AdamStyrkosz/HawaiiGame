@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44824666, g: 0.49827212, b: 0.57558215, a: 1}
+  m_IndirectSpecularColor: {r: 0.44824642, g: 0.49827188, b: 0.5755815, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1506,16 +1506,56 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 562317333}
   tilePrefabs:
+  - {fileID: 1052500356901357615, guid: afc9fc82070c49c4d9f302d257ea6a1b, type: 3}
+  - {fileID: 1052500356901357615, guid: de3e9389759c5d54784f62034f870694, type: 3}
+  - {fileID: 1052500356901357615, guid: b0cd06082ab213a46ac120beb0ef8884, type: 3}
+  - {fileID: 1052500356901357615, guid: 97447ae1c6c67434ebc61b7fe377bb91, type: 3}
+  - {fileID: 1052500356901357615, guid: dcad47bb8c03dd749aea1b64389794c6, type: 3}
+  - {fileID: 1052500356901357615, guid: 19b41cfa74edf36469e4721bd2709282, type: 3}
+  - {fileID: 1052500356901357615, guid: 9379f9518c25d5f4e9d26b4253167378, type: 3}
+  - {fileID: 1052500356901357615, guid: 17eb55827fd6a4349b83e9be49c39d8d, type: 3}
   - {fileID: 1052500356901357615, guid: 921168187b006ad4e8e0e0af7d1a2dd6, type: 3}
+  - {fileID: 1052500356901357615, guid: 574eaa9af148a8e4084684b0e6f5b0a7, type: 3}
+  - {fileID: 1052500356901357615, guid: 08f43989bfd261e4eb40ead1af814d19, type: 3}
+  - {fileID: 1052500356901357615, guid: aa30cadec2c222b4487c62350d703afe, type: 3}
+  - {fileID: 1052500356901357615, guid: d782f734daeaa9140b0a4c08ebb6aadf, type: 3}
   - {fileID: 1052500356901357615, guid: 91f266f76079462439b96944b856163c, type: 3}
+  - {fileID: 1052500356901357615, guid: 73d7be0eb24f29b44be664101b48ec19, type: 3}
+  - {fileID: 1052500356901357615, guid: e438bb0f2f21b16428da3db1ccfc8bd0, type: 3}
+  - {fileID: 1052500356901357615, guid: 066d47986bf9a1645b4c2b9274be2db2, type: 3}
+  - {fileID: 1052500356901357615, guid: d7ac0a7b5c264914a855260711970dc9, type: 3}
   - {fileID: 1052500356901357615, guid: 51ff9927b3ec97b408969ed021972185, type: 3}
+  - {fileID: 1052500356901357615, guid: 7eead76bfef373546b843c66b722a0b4, type: 3}
+  - {fileID: 1052500356901357615, guid: bbc6d93eb4659b64793d9c981340592c, type: 3}
+  - {fileID: 1052500356901357615, guid: e0e0667c17f09ea49bfc70d705f01244, type: 3}
+  - {fileID: 1052500356901357615, guid: 6c26516e497f73b458c4f084e9fb2c4f, type: 3}
   - {fileID: 1052500356901357615, guid: 4b69e2de779caa6498a85bf7b5866643, type: 3}
+  - {fileID: 1052500356901357615, guid: d82abf3e13ab1354aa3dc92a8d6466ab, type: 3}
+  - {fileID: 1052500356901357615, guid: 4cea97ca98e8c0647aca2e6078823afb, type: 3}
+  - {fileID: 1052500356901357615, guid: d23aed396616521479a0df99ad2867c5, type: 3}
+  - {fileID: 1052500356901357615, guid: 90828ac172011be40afa89648a6f0b32, type: 3}
   - {fileID: 1052500356901357615, guid: 4718064d7d801474da4a8a8a7bc23bd4, type: 3}
+  - {fileID: 1052500356901357615, guid: fe637a3aac2e01f4d8dc30c21366bcde, type: 3}
+  - {fileID: 1052500356901357615, guid: b1d420429c2b4d943a65c2485f02eece, type: 3}
+  - {fileID: 1052500356901357615, guid: 3cd7e1c22dd533a44919810593e9f38b, type: 3}
+  - {fileID: 1052500356901357615, guid: edbee5ec14a92b4448d1ca6f9a982396, type: 3}
   - {fileID: 1052500356901357615, guid: 56b585a1663c6e744a154a7289ba4467, type: 3}
+  - {fileID: 1052500356901357615, guid: 5a2b08647b7956f49b8f2fb60318fb5e, type: 3}
+  - {fileID: 1052500356901357615, guid: f500f5a1beffecf448962d949bbd02b9, type: 3}
+  - {fileID: 1052500356901357615, guid: 20e1475cea3ca5847bfc20f06e3bb582, type: 3}
+  - {fileID: 1052500356901357615, guid: 22badd93ca03d03419379496c4c1903c, type: 3}
   - {fileID: 1052500356901357615, guid: 23b97449be32a4049b766924a89a9eec, type: 3}
+  - {fileID: 1052500356901357615, guid: 7a859c7fd3600a34c88a45758329914b, type: 3}
+  - {fileID: 1052500356901357615, guid: 54e7041187ec6d94cab5fef2e75a9c32, type: 3}
+  - {fileID: 1052500356901357615, guid: f00c20913697e3a478db7b3a0eb376d2, type: 3}
+  - {fileID: 1052500356901357615, guid: 55241d75b9dd9a44daad68ea657405b6, type: 3}
   - {fileID: 1052500356901357615, guid: cfbc968485fa19a498c7cf473d446592, type: 3}
+  - {fileID: 1052500356901357615, guid: 2e37b3ea5904cf64f9a86d3f40ca8b7f, type: 3}
+  - {fileID: 1052500356901357615, guid: b52f7004615b2114b9d402db8e7400c1, type: 3}
+  - {fileID: 1052500356901357615, guid: db6d51518f294ee4c852d69b9eaa771c, type: 3}
+  - {fileID: 1052500356901357615, guid: 21d6d73abcff3434f96a0b62fcc1bbe3, type: 3}
   - {fileID: 1052500356901357615, guid: 55c036ad18136fc43adfed0ba2b20b17, type: 3}
-  superTile: {fileID: 1052500356901357615, guid: 97447ae1c6c67434ebc61b7fe377bb91, type: 3}
+  superTile: {fileID: 1052500356901357615, guid: 89bdd38ad0196e3448a8a414d1b581c7, type: 3}
   zSpawn: 0
   tileLenght: 60
 --- !u!4 &861485313
