@@ -7,7 +7,8 @@ public class MainMenu : MonoBehaviour
 {
     public void Start()
     {
-        
+
+        Time.timeScale = 1f;
     }
     public void QuitButton()
     {
@@ -17,6 +18,7 @@ public class MainMenu : MonoBehaviour
     public void StartGame()
     {
         ScoreController.score = 0;
+        Time.timeScale = 1f;
         SceneManager.LoadScene(ScenesNames.level);       
     }
 }

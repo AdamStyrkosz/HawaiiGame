@@ -23,6 +23,9 @@ public class PlayerController : MonoBehaviour
     public float shootRateTimeStamp = 0f;
     public float shootForce = 0f;
 
+    [SerializeField] ParticleSystem dustParticle = null;
+    [SerializeField] ParticleSystem explosionParticle = null;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,17 +57,21 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("isGrounded", controller.isGrounded);
         if (controller.isGrounded)
         {
-
+            Vector3 dustPosition = new Vector3(transform.position.x, transform.position.y - 1.0f, transform.position.z);
+            dustParticle.transform.position = dustPosition;
+            dustParticle.Play();
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                dustParticle.transform.position = new Vector3(0, -5.0f, 0);
                 Jump();
             }
         }
         else
         {
+            dustParticle.Stop();
             direction.y += Gravity * Time.deltaTime;
         }
-        
+
 
         if (Input.GetKeyDown(KeyCode.D))
         {
@@ -142,5 +149,12 @@ public class PlayerController : MonoBehaviour
         controller.height = 2;
         animator.SetBool("isSliding", false);
         isSliding = false;
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Obstacle")
+        {
+            explosionParticle.Play();
+        }
     }
 }

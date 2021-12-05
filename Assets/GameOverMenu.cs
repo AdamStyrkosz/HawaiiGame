@@ -14,7 +14,8 @@ public class GameOverMenu : MonoBehaviour
 
     public Text nameInputText;
     public Button submitScoreButton;
-    
+
+    public Text score;
 
     void Update()
     {
@@ -27,6 +28,7 @@ public class GameOverMenu : MonoBehaviour
     void EndGame()
     {
         Time.timeScale = 0f;
+        score.text = $"Score: {ScoreController.score}";
 
         gameOverlay.SetActive(false);
         gameOverMenu.SetActive(true);
@@ -34,7 +36,6 @@ public class GameOverMenu : MonoBehaviour
 
     public void LoadMenu()
     {
-        Time.timeScale = 1f;
         SceneManager.LoadScene(ScenesNames.mainMenu);
     }
 
